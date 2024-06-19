@@ -146,13 +146,57 @@ h1 {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-
   height: 40px;
   background: #4e75ff;
   font-weight: 500;
   color: #fff;
   margin: 0;
+  max-width: 148px;
 }
 .widget p {
   margin: 0;
+}
+
+/* ------------task-6--------------------- */
+#controls {
+  background: #f6f6fe;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32px;
+  align-content: center;
+  justify-content: center;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 72px;
+  width: 150px;
+  height: 40px;
+  color: #2e2f42;
+}
+#controls button[data-create] {
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 31.5px;
+  max-width: 120px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+#controls button[data-destroy] {
+  background: #ff4e4e;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 26.5px;
+  max-width: 120px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
