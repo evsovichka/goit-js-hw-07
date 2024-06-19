@@ -128,3 +128,31 @@ h1 {
   letter-spacing: 0.04em;
   color: #fff;
 }
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+.widget p {
+  margin: 0;
+}
