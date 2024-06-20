@@ -41,14 +41,16 @@ const createBtn = controls.querySelector("[data-create]");
 const destroyBtn = controls.querySelector("[data-destroy]");
 
 function createBoxes(amount) {
+  const fragment = document.createDocumentFragment();
   for (let i = 1; i <= amount; i++) {
     const newDiv = document.createElement("div");
     newDiv.className = "newDiv";
     newDiv.style.width = `${30 + i * 10}px`;
     newDiv.style.height = `${30 + i * 10}px`;
     newDiv.style.backgroundColor = getRandomHexColor();
-    boxes.appendChild(newDiv);
+    fragment.appendChild(newDiv);
   }
+  boxes.appendChild(fragment);
 }
 
 createBtn.addEventListener("click", () => {
